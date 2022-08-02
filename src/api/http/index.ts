@@ -1,6 +1,3 @@
-import axios from 'axios'
-
-// http/index.ts
     import axios from 'axios'
     //创建axios的一个实例 
     var instance = axios.create({
@@ -20,16 +17,16 @@ import axios from 'axios'
             config.data = JSON.stringify(config.data);
         }
         return config;
-    }, (error) =>
+    }, (error: any) =>
         // 对请求错误做些什么
         Promise.reject(error));
 
     //响应拦截器
-    instance.interceptors.response.use((response) => {
+    instance.interceptors.response.use((response: any) => {
         //响应成功
         console.log('响应成功');
         return response.data;
-    }, (error) => {
+    }, (error: any) => {
         console.log(error)
         //响应错误
         if (error.response && error.response.status) {
