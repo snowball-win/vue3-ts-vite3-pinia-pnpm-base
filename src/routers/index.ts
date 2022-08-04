@@ -12,7 +12,7 @@ const routes=[
   },
   {
     path: '/like',
-    component: ()=>import('../views/like.vue')
+    component: ()=>import('../views/indicators/like.vue')
   }
 ]
 // 创建路由管理器 模式和路由
