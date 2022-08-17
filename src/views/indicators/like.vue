@@ -8,6 +8,10 @@
   children?: Tree[]
 }
 
+const handleSelectionChange = () => {
+  
+}
+
 const handleNodeClick = (data: Tree) => {
   console.log(data)
 }
