@@ -1,8 +1,9 @@
 <script setup lang="ts">
-  // import { getUser } from "../api/m-staff-center";
-  // const s = getUser({
-  //   text: "snow",
-  // });
+  import { getUser } from "../../api/m-staff-center";
+  const s = getUser({
+    text: "snow",
+  });
+
   interface Tree {
   label: string
   children?: Tree[]

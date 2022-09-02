@@ -6,9 +6,6 @@ export const getUser = (data: any) => {
         data,
         method: "get",
         config: {
-            // headers: {
-            //     'Request-Type': 'wechat'
-            // },
             timeout: 10000
         }
     })
