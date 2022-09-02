@@ -119,7 +119,7 @@ const defaultProps = {
   children: 'children',
   label: 'label',
 }
-const activeName = 'first'
+let activeName = 'first'
 </script>
 
 <template>
