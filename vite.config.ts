@@ -21,11 +21,6 @@ export default defineConfig({
       '/m-staff-center': { // 匹配请求路径，localhost:3000/m-staff-center，如果只是匹配/那么就访问到网站首页了
           target: loadEnv(process.argv[process.argv.length-1], './env').VITE_SERVER_NAME, // 代理的目标地址
           changeOrigin: true, // 开发模式，默认的origin是真实的 origin:localhost:3000 代理服务会把origin修改为目标地址
-          // secure: true, // 是否https接口
-          // ws: true,
-          // rewrite target目标地址 + '/m-staff-center'，如果接口是这样的，那么不用重写
-          // rewrite: (path) => path.replace(/^\/m-staff-center/, '') // 路径重写，本项目不需要重写
-          // https://www.bilibili.com/video/BV1p3411J7CE?p=21
       }
     },
     // 生产环境打包配置

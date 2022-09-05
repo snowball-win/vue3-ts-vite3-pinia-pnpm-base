@@ -1,4 +1,5 @@
     import axios from 'axios'
+    import cookie from 'js-cookie'
     //创建axios的一个实例 
     var instance = axios.create({
         // baseURL: import.meta.env.VITE_RES_URL, //接口统一域名
@@ -10,7 +11,8 @@
     //请求拦截器 
     instance.interceptors.request.use((config: any) => {
         // 每次发送请求之前判断是否存在token，如果存在，则统一在http请求的header都加上token，不用每次请求都手动添加了
-        const token = window.localStorage.getItem('token');
+        const token = `Bearer ${cookie.get('token')}`
+        console.log('16', token)
         token && (config.headers.Authorization = token)
         //若请求方式为post，则将data参数转为JSON字符串
         if (config.method === 'POST') {

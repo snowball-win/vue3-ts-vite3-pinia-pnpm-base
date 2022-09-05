@@ -1,8 +1,11 @@
 <script setup lang="ts">
-  import { getUser } from "../../api/m-staff-center";
-  const s = getUser({
-    text: "snow",
-  });
+  import { getUser } from "@/api/m-staff-center";
+  let params = {
+    keyword:"snow",
+  }
+  getUser(params).then((res: any)=>{
+    console.log('4res', res)
+  })
 
   interface Tree {
   label: string
