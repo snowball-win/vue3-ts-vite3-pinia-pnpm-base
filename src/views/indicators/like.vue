@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { getUser } from "@/api/m-staff-center";
   let params = {
-    keyword:"snow",
+    keyword:"",
   }
   getUser(params).then((res: any)=>{
     console.log('4res', res)

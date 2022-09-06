@@ -15,8 +15,10 @@
         console.log('16', token)
         token && (config.headers.Authorization = token)
         //若请求方式为post，则将data参数转为JSON字符串
-        if (config.method === 'POST') {
+        if (config.method === 'post') {
             config.data = JSON.stringify(config.data);
+        } else if(config.method === 'get'){
+            console.log('21', config)
         }
         return config;
     }, (error: any) =>
