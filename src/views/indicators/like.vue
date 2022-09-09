@@ -8,7 +8,7 @@
   // })
   import { getCurrentInstance } from 'vue'
   let internalInstance = getCurrentInstance();
-  let Api = internalInstance.appContext.config.globalProperties.$api
+  let Api = internalInstance && internalInstance.appContext.config.globalProperties.$api
   let params = {
     keyword:"",
   }
