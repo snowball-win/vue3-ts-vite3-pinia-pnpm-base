@@ -13,7 +13,7 @@ apiGenerators.forEach((generator:any) => {
     axios
   })
   for (const apiName in apiInstance) {
-    if (apiInstance.hasOwnProperty(apiName)) {
+    if (apiInstance.hasOwnProperty(apiName)) { // 通过名称找到定义的接口地址
       api[apiName] = apiInstance[apiName]
     }
   }
