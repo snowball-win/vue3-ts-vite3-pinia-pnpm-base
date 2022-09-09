@@ -1,10 +1,19 @@
 <script setup lang="ts">
-  import { getUser } from "@/api/m-staff-center";
+  // import { getUser } from "@/api/m-staff-center";
+  // let params = {
+  //   keyword:"",
+  // }
+  // getUser(params).then((res: any)=>{
+  //   console.log('4res', res)
+  // })
+  import { getCurrentInstance } from 'vue'
+  let internalInstance = getCurrentInstance();
+  let Api = internalInstance.appContext.config.globalProperties.$api
   let params = {
     keyword:"",
   }
-  getUser(params).then((res: any)=>{
-    console.log('4res', res)
+  Api.getUser(params).then((res: any)=>{
+    console.log('17res', res)
   })
 
   interface Tree {
