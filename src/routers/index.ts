@@ -1,5 +1,6 @@
 // 引入创建路由管理器 引入创建路由模式 history模式
 import { createRouter, createWebHistory } from 'vue-router'
+import layout_default from '@/layouts/default/index.vue'
 // 引入路由各页面配置
 const routes=[
   {
@@ -13,6 +14,18 @@ const routes=[
   {
     path: '/like',
     component: ()=>import('../views/indicators/like.vue')
+  },
+  {
+    path: '/layout',
+    component: layout_default,
+    name: 'layout',
+    children: [
+      {
+        path: 'default',
+        component: ()=>import('../views/indicators/default.vue'),
+        name: 'default'
+      }
+    ]
   }
 ]
 // 创建路由管理器 模式和路由
