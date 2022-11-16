@@ -1,13 +1,14 @@
 <script setup lang="ts">
+  import { v4 as uuidv4 } from "uuid";
+  import { getCurrentInstance } from 'vue'
+  console.log('136', uuidv4())
   // import { getUser } from "@/api/m-staff-center";
   // let params = {
   //   keyword:"",
   // }
   // getUser(params).then((res: any)=>{
-  // getUser(params).then((res: any)=>{
   //   console.log('4res', res)
   // })
-  import { getCurrentInstance } from 'vue'
   let internalInstance = getCurrentInstance();
   let Api = internalInstance && internalInstance.appContext.config.globalProperties.$api
   let params = {

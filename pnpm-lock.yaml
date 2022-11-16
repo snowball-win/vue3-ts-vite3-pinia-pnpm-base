@@ -13,6 +13,7 @@ specifiers:
   lint-staged: ^13.0.3
   pre-commit: ^1.2.2
   typescript: ^4.6.4
+  uuid: ^9.0.0
   vite: ^3.0.0
   vue: ^3.2.37
   vue-global-api: ^0.4.1
@@ -28,6 +29,7 @@ dependencies:
   js-cookie: 3.0.1
   lint-staged: 13.0.3
   pre-commit: 1.2.2
+  uuid: 9.0.0
   vue: 3.2.37
   vue-global-api: 0.4.1_vue@3.2.37
   vue-router: 4.1.3_vue@3.2.37
@@ -1416,6 +1418,11 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: false
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
     dev: false
 
   /vite/3.0.4_less@4.1.3:
