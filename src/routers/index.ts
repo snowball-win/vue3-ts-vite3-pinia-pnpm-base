@@ -26,7 +26,11 @@ const routes=[
         name: 'default'
       }
     ]
-  }
+  },
+  {
+    path: '/auth',
+    component: ()=>import('../views/wechat/auth.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
