@@ -31,6 +31,18 @@ const routes=[
     path: '/auth',
     component: ()=>import('../views/wechat/auth.vue')
   },
+  {
+    path: '/bubbleSort', // 冒泡排序
+    component: ()=>import('../views/sort/bubbleSort.vue')
+  },
+  {
+    path: '/selectionSort', // 选择排序
+    component: ()=>import('../views/sort/selectionSort.vue')
+  },
+  {
+    path: '/insertionSort', // 插入排序
+    component: ()=>import('../views/sort/insertionSort.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
