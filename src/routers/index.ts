@@ -43,6 +43,10 @@ const routes=[
     path: '/insertionSort', // 插入排序
     component: ()=>import('../views/sort/insertionSort.vue')
   },
+  {
+    path: '/maskImage', // 弹幕不遮挡视频人物
+    component: ()=>import('../views/demo/mask-image.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
