@@ -47,6 +47,14 @@ const routes=[
     path: '/maskImage', // 弹幕不遮挡视频人物
     component: ()=>import('../views/demo/mask-image.vue')
   },
+  {
+    path: '/three', // three.js
+    component: ()=>import('../views/three/index.vue')
+  },
+  {
+    path: '/data-path', // data-path
+    component: ()=>import('../views/dataPath/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
