@@ -56,8 +56,12 @@ const routes=[
     component: ()=>import('../views/dataPath/index.vue')
   },
   {
-    path: '/strict', // data-path
+    path: '/strict', // strict
     component: ()=>import('../views/strict/index.vue')
+  },
+  {
+    path: '/fragments', // fragments
+    component: ()=>import('../views/fragments/index.vue')
   },
 ]
 // 创建路由管理器 模式和路由
