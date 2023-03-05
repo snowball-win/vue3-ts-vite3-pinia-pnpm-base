@@ -63,6 +63,10 @@ const routes=[
     path: '/fragments', // fragments
     component: ()=>import('../views/fragments/index.vue')
   },
+  {
+    path: '/onErrorCaptured', // onErrorCaptured
+    component: ()=>import('../views/onErrorCaptured/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
