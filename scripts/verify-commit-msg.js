@@ -1,6 +1,7 @@
-const chalk = require('chalk')
-const msgPath = process.env.GIT_PARAMS
-const msg = require('fs').readFileSync(msgPath, 'utf-8').trim()
+import chalk from 'chalk'; // 控制台日志标注样式
+import fs from 'fs';
+const msgPath = process.env.GIT_PARAMS || '.git/COMMIT_EDITMSG' // 读取到保存 git commit 时输入的描述信息的文件目录，一般路径如下：.git/COMMIT_EDITMSG
+const msg = fs.readFileSync(msgPath, 'utf-8').trim()
 
 const commitRE =
   /^(revert: )?(wip|release|feat|fix|polish|docs|style|refactor|perf|test|workflow|ci|chore|types|build)(\(.+\))?: .{1,50}/

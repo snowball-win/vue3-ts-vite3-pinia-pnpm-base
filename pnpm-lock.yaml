@@ -15,6 +15,7 @@ specifiers:
   axios: ^0.27.2
   babel-jest: ^29.3.1
   babel-plugin-transform-es2015-modules-commonjs: ^6.26.2
+  chalk: 4.1.2
   element-plus: ^2.2.12
   husky: ^8.0.1
   jest: ^29.3.1
@@ -40,6 +41,7 @@ dependencies:
   '@types/webpack-env': 1.18.0
   ant-design-vue: 3.2.15_vue@3.2.37
   axios: 0.27.2
+  chalk: 4.1.2
   element-plus: 2.2.12_vue@3.2.37
   husky: 8.0.1
   jest-environment-jsdom: 29.3.1
