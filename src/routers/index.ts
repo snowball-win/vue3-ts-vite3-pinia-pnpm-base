@@ -67,6 +67,22 @@ const routes=[
     path: '/onErrorCaptured', // onErrorCaptured
     component: ()=>import('../views/onErrorCaptured/index.vue')
   },
+  {
+    path: '/bignumber', // bignumber
+    component: ()=>import('../views/math/bignumber.vue')
+  },
+  {
+    path: '/big', // big
+    component: ()=>import('../views/math/big.js.vue')
+  },
+  {
+    path: '/decimal', // big
+    component: ()=>import('../views/math/decimal.js.vue')
+  },
+  {
+    path: '/math', // math
+    component: ()=>import('../views/math/mathjs.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({

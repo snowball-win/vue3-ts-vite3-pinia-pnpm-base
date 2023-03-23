@@ -26,6 +26,7 @@
     "jest-environment-jsdom": "^29.3.1",
     "js-cookie": "^3.0.1",
     "lint-staged": "^13.0.3",
+    "mathjs": "^11.7.0",
     "pre-commit": "^1.2.2",
     "uuid": "^9.0.0",
     "vue": "^3.2.37",
