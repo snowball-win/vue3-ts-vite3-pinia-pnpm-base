@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.20.2
   '@babel/preset-env': ^7.20.2
+  '@types/big.js': ^6.1.6
   '@types/jest': ^29.2.3
   '@types/js-cookie': ^3.0.2
   '@types/node': ^18.7.14
@@ -15,6 +16,7 @@ specifiers:
   axios: ^0.27.2
   babel-jest: ^29.3.1
   babel-plugin-transform-es2015-modules-commonjs: ^6.26.2
+  big.js: ^6.2.1
   bignumber.js: ^9.1.1
   chalk: 4.1.2
   element-plus: ^2.2.12
@@ -38,11 +40,13 @@ specifiers:
   weixin-js-sdk-ts: ^1.6.1
 
 dependencies:
+  '@types/big.js': 6.1.6
   '@types/js-cookie': 3.0.2
   '@types/three': 0.148.0
   '@types/webpack-env': 1.18.0
   ant-design-vue: 3.2.15_vue@3.2.37
   axios: 0.27.2
+  big.js: 6.2.1
   bignumber.js: 9.1.1
   chalk: 4.1.2
   element-plus: 2.2.12_vue@3.2.37
@@ -1655,6 +1659,10 @@ packages:
       '@babel/types': 7.18.10
     dev: true
 
+  /@types/big.js/6.1.6:
+    resolution: {integrity: sha512-0r9J+Zz9rYm2hOTwiMAVkm3XFQ4u5uTK37xrQMhc9bysn/sf/okzovWMYYIBMFTn/yrEZ11pusgLEaoarTlQbA==}
+    dev: false
+
   /@types/graceful-fs/4.1.5:
     resolution: {integrity: sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==}
     dependencies:
@@ -2285,6 +2293,10 @@ packages:
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
+
+  /big.js/6.2.1:
+    resolution: {integrity: sha512-bCtHMwL9LeDIozFn+oNhhFoq+yQ3BNdnsLSASUxLciOb1vgvpHsIO1dsENiGMgbb4SkP5TrzWzRiLddn8ahVOQ==}
+    dev: false
 
   /bignumber.js/9.1.1:
     resolution: {integrity: sha512-pHm4LsMJ6lzgNGVfZHjMoO8sdoRhOzOH4MLmY65Jg70bpxCKu5iOHNJyfF6OyvYw7t8Fpf35RuzUyqnQsj8Vig==}
