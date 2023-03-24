@@ -1,50 +1,26 @@
 <template>
-    <div class="container">
-      <div>decimal.js</div>
-    </div>
+  <div class="container">
+    <div>decimal.js</div>
+  </div>
 </template>
-  
+
 <script setup lang="ts">
-import {
-  add, // 加法
-  subtract, // 减法
-  multiply, // 乘法
-  divide, // 除法
-  bignumber, // 告诉mathjs 这个值是个 浮点数，不使用这个，mathjs精度还是有误差的
-  atan2, // 所求角的弧度值并且在[π,-π]之间
-  chain, // 链式操作
-  derivative, // ??
-  matrix, // 矩阵操作
-  e, // 欧拉常数和自然对数的基数，约为 2.718
-  evaluate, // 直接运算表达式
-  log, // 返回给定数字的自然Log值(即e的底数)
-  pi,
-  pow, // 指数计算
-  round, // 四舍五入
-  sqrt // 平方根计算
-} from 'mathjs'
-
-console.log('add:',add(1, 2))
-console.log('subtract:',subtract(2, 1))
-console.log('multiply:',multiply(2, 2))
-console.log('divide:',divide(4, 2))
-console.log('bignumber:',bignumber(4.01))
-console.log('round:',round(4.01))
-console.log('evaluate:',evaluate('(4.01 + 3) / 2'))
-console.log('sqrt:',sqrt(4))
-console.log('pow:',pow(3,3))
-console.log('chain:',chain(3).add(4).multiply(2).done())
-console.log('atan2:',atan2(15,30))
-console.log('log:',log(9))
-console.log('pi:',pi)
-console.log('e:',e)
-console.log('derivative:',derivative('x^2 + x', 'x'))
-console.log('matrix:',matrix([0, 1, 2,  3, 4]))
-
-
+import Decimal from 'Decimal.js'
+const num = new Decimal(1234567890.0123456789)
+const num1 = new Decimal(123.123)
+console.log('plus:', num1.plus(new Decimal(1.1))) // 加法
+console.log('minus:', num1.minus(new Decimal(1.1))) // 减法
+console.log('times:', num1.times(new Decimal(2))) // 乘法
+console.log('div:', num1.div(new Decimal(2))) // 除法
+console.log('mod:', num1.mod(new Decimal(2))) // 取余
+console.log('x.eq(y):', num.eq(num1)) // isEqualTo--是否相等--false
+console.log('x.gt(y):', num.gt(num1)) // isGreaterThan--是否大于--true
+console.log('x.gte(y):', num.gte(num1)) // isGreaterThanOrEqualTo--是否大于等于--true
+console.log('x.lt(y):', num.lt(num1)) // isLessThan--是否小于--false
+console.log('x.lte(y):', num.lte(num1)) // isLessThanOrEqualTo--是否小于等于--false
 
 </script>
-  
+
 <style scoped lang="less">
 
 </style>
