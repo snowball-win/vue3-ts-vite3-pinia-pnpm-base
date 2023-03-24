@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <div>mathjs</div>
+      <div>decimal.js</div>
     </div>
 </template>
   
