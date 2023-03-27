@@ -83,6 +83,10 @@ const routes=[
     path: '/math', // math
     component: ()=>import('../views/math/mathjs.vue')
   },
+  {
+    path: '/pinia', // pinia
+    component: ()=>import('../views/pinia/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
