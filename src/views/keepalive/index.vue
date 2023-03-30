@@ -5,7 +5,7 @@
       <el-input v-model="KValue"></el-input>
     </div>
     <div>
-      <router-link to='/keepalive-snow'>
+      <router-link to='/menu/keepalivesnow'>
         <button>keep-aliva-snow</button>
       </router-link>
     </div>
@@ -33,5 +33,7 @@ onDeactivated(() => {
 </script>
 
 <style scoped lang="less">
-
+.el-input{
+  width: 300px;
+}
 </style>

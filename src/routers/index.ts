@@ -1,6 +1,7 @@
 // 引入创建路由管理器 引入创建路由模式 history模式
 import { createRouter, createWebHistory } from 'vue-router'
 import layout_default from '@/layouts/default/index.vue'
+import layout_menu from '@/layouts/menu/index.vue'
 // 引入路由各页面配置
 const routes=[
   {
@@ -88,19 +89,48 @@ const routes=[
     component: ()=>import('../views/pinia/index.vue')
   },
   {
-    path: '/keepalive', // keepalive
-    component: ()=>import('../views/keepalive/index.vue'),
+    path: '/menu', // keepalive
+    component: layout_menu,
+    name: 'menu',
+    children: [
+      {
+        path: 'keepalive',
+        component: ()=>import('../views/keepalive/index.vue'),
+        name: 'keepalive',
+        meta: {
+          keepAlive: true // 该页面需要keepAlive
+        }
+      }
+    ],
     meta: {
       keepAlive: true // 该页面需要keepAlive
     }
   },
   {
-    path: '/keepalive-snow', // keepalive
-    component: ()=>import('../views/keepalive/snow.vue'),
+    path: '/menu', // keepalive
+    component: layout_menu,
+    name: 'menu2',
+    children: [
+      {
+        path: 'keepalivesnow',
+        component: ()=>import('../views/keepalive/snow.vue'),
+        name: 'keepalivesnow',
+        meta: {
+          keepAlive: true // 该页面需要keepAlive
+        }
+      }
+    ],
     meta: {
       keepAlive: true // 该页面需要keepAlive
     }
   },
+  // {
+  //   path: '/keepalive-snow', // keepalive
+  //   component: ()=>import('../views/keepalive/snow.vue'),
+  //   meta: {
+  //     keepAlive: true // 该页面需要keepAlive
+  //   }
+  // },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({

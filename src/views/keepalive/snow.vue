@@ -5,7 +5,7 @@
       <el-input v-model="KValue"></el-input>
     </div>
     <div>
-      <router-link to='/keepalive'>
+      <router-link to='/menu/keepalive'>
         <button>keep-aliva</button>
       </router-link>
     </div>
@@ -31,5 +31,7 @@ onDeactivated(() => {
 </script>
 
 <style scoped lang="less">
-
+.el-input{
+  width: 300px;
+}
 </style>
