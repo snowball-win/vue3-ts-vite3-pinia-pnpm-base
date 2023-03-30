@@ -1,5 +1,11 @@
 <template>
-  <router-view></router-view>
+  <!-- <router-view></router-view> -->
+  <router-view v-slot="{ Component }">
+    <component :is="Component" v-if="!$route.meta.keepAlive" :key="$route.path" />
+    <keep-alive>
+      <component :is="Component" v-if="$route.meta.keepAlive" :key="$route.path" />
+    </keep-alive>
+  </router-view>
 </template>
 <script setup lang="ts">
 onErrorCaptured(err => {

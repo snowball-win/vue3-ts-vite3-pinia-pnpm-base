@@ -87,6 +87,20 @@ const routes=[
     path: '/pinia', // pinia
     component: ()=>import('../views/pinia/index.vue')
   },
+  {
+    path: '/keepalive', // keepalive
+    component: ()=>import('../views/keepalive/index.vue'),
+    meta: {
+      keepAlive: true // 该页面需要keepAlive
+    }
+  },
+  {
+    path: '/keepalive-snow', // keepalive
+    component: ()=>import('../views/keepalive/snow.vue'),
+    meta: {
+      keepAlive: true // 该页面需要keepAlive
+    }
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
