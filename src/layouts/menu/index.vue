@@ -10,9 +10,8 @@
           <!-- 子路由出口 -->
           <!-- <router-view /> -->
           <router-view v-slot="{ Component }">
-            <component :is="Component" v-if="!$route.meta.keepAlive" :key="$route.path" />
-            <keep-alive>
-              <component :is="Component" v-if="$route.meta.keepAlive" :key="$route.path" />
+            <keep-alive include="keepalive" :max="10">
+              <component :is="Component" :key="$route.path" />
             </keep-alive>
           </router-view>
         </el-main>

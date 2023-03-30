@@ -35,6 +35,7 @@
     "pinia-plugin-persist": "^1.0.0",
     "pre-commit": "^1.2.2",
     "uuid": "^9.0.0",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue": "^3.2.37",
     "vue-global-api": "^0.4.1",
     "vue-router": "^4.1.3",
