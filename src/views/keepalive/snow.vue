@@ -1,18 +1,19 @@
 <template>
   <div class="container">
-    <div>keep-alive-snow</div>
+    <div>keep-alive-snow-详情页面</div>
     <div>
+      <span>输入框：</span>
       <el-input v-model="KValue"></el-input>
     </div>
     <div>
       <router-link to='/menu/keepalive'>
-        <button>keep-aliva</button>
+        <button>回到列表页keep-aliva-list</button>
       </router-link>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" name="keepalivesnow">
 
 const KValue = ref('')
 

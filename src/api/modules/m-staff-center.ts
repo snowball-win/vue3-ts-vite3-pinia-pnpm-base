@@ -29,4 +29,11 @@ export default ({
         method: "get"
       })
     },
+    getVideoList(data: T.userParams) {
+      return axios({
+        url: '/m-staff-center/api/v1/UcAuthCompany/getName',
+        data,
+        method: "post"
+      })
+    },
 })
