@@ -131,6 +131,18 @@ const routes=[
   //     keepAlive: true // 该页面需要keepAlive
   //   }
   // },
+  {
+    path: '/directives', // pinia
+    component: ()=>import('../views/directives/index.vue')
+  },
+  {
+    path: '/directives2',
+    component: ()=>import('../views/directives/index2.vue')
+  },
+  {
+    path: '/directives3',
+    component: ()=>import('../views/directives/index3.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({

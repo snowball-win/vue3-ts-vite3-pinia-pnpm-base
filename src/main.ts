@@ -11,8 +11,10 @@ import { api } from './api/index'
 import { createPinia } from 'pinia'
 import piniaPersist from 'pinia-plugin-persist' // pinia持久化
 import 'vue-global-api';
+import registerDirectives from './directives' // 自定义指令
 
 const app = createApp(App)
+registerDirectives(app)
 const pinia = createPinia()
 pinia.use(piniaPersist)
 app.use(ElementPlus)
