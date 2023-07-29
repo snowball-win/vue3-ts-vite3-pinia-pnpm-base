@@ -143,6 +143,10 @@ const routes=[
     path: '/directives3',
     component: ()=>import('../views/directives/index3.vue')
   },
+  {
+    path: '/ref',
+    component: ()=>import('../views/ref-reactive/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
