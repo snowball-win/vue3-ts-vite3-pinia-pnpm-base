@@ -1,10 +1,11 @@
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 console.log('基础服务路径', loadEnv(process.argv[process.argv.length-1], './env').VITE_SERVER_NAME) // 打印到了VITE_SERVER_NAME
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(),VueSetupExtend()],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),

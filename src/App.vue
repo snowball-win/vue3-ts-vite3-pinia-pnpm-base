@@ -1,12 +1,18 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-</script>
-
 <template>
-  <router-view></router-view>
+  <!-- <router-view></router-view> -->
+  <router-view v-slot="{ Component }">
+    <component :is="Component" v-if="!$route.meta.keepAlive" :key="$route.path" />
+    <keep-alive>
+      <component :is="Component" v-if="$route.meta.keepAlive" :key="$route.path" />
+    </keep-alive>
+  </router-view>
 </template>
-
+<script setup lang="ts">
+onErrorCaptured(err => {
+  console.log('Caught error', err)
+  return false
+})
+</script>
 <style scoped>
 .logo {
   height: 6em;
