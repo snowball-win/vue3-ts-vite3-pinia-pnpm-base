@@ -147,6 +147,10 @@ const routes=[
     path: '/ref',
     component: ()=>import('../views/ref-reactive/index.vue')
   },
+  {
+    path: '/reg',
+    component: ()=>import('../views/regexp/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
