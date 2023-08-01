@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@tinymce/tinymce-vue':
+    specifier: ^5.1.0
+    version: 5.1.0(vue@3.3.4)
   '@types/big.js':
     specifier: ^6.1.6
     version: 6.1.6
@@ -65,6 +68,9 @@ dependencies:
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
+  tinymce:
+    specifier: ^6.6.0
+    version: 6.6.0
   uuid:
     specifier: ^9.0.0
     version: 9.0.0
@@ -2113,6 +2119,15 @@ packages:
 
   /@sxzz/popperjs-es@2.11.7:
     resolution: {integrity: sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==}
+    dev: false
+
+  /@tinymce/tinymce-vue@5.1.0(vue@3.3.4):
+    resolution: {integrity: sha512-Z4R8zaOKrAXBhHWsq+qUlwHY+rvze2RgxHDrZ5+qTYkGvRofW5880HLG9gvv6TRPVsNSQBNMdsaOjJ/eueccgA==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      tinymce: 6.6.0
+      vue: 3.3.4
     dev: false
 
   /@tootallnate/once@2.0.0:
@@ -5792,6 +5807,10 @@ packages:
 
   /tiny-emitter@2.1.0:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
+    dev: false
+
+  /tinymce@6.6.0:
+    resolution: {integrity: sha512-b9Mb7z8ryFOwLm8WCmlpwzdgOt1xD1u5Jjdh68B4QjkIyTLyHRBsfsrbiCUGonnVTymDlkexPkaP8sj24zexKQ==}
     dev: false
 
   /tmpl@1.0.5:

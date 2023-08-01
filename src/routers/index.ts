@@ -155,6 +155,10 @@ const routes=[
     path: '/tailwind',
     component: ()=>import('../views/tailwind-css/index.vue')
   },
+  {
+    path: '/tinymce',
+    component: ()=>import('../views/tinymce/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
