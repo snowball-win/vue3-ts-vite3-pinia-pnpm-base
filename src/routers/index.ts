@@ -159,6 +159,10 @@ const routes=[
     path: '/tinymce',
     component: ()=>import('../views/tinymce/index.vue')
   },
+  {
+    path: '/flex',
+    component: ()=>import('../views/flexbox/index.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
