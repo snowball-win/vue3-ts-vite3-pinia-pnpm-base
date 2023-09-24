@@ -167,6 +167,10 @@ const routes=[
     path: '/translate',
     component: ()=>import('../views/translate/index.vue')
   },
+  {
+    path: '/translate2',
+    component: ()=>import('../views/translate/index2.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
