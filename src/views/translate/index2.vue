@@ -21,11 +21,10 @@ const translate = () => {
   );
 }
 
-let oScript=document.createElement('script')    
-oScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
-document.body.appendChild(oScript)
-document.head.appendChild(oScript)
-oScript.onload = (()=>{
+let script = document.createElement('script')    
+script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+document.body.appendChild(script)
+script.onload = (()=>{
   setTimeout(()=>{
     translate()
   },1000)
