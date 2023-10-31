@@ -171,6 +171,46 @@ const routes=[
     path: '/translate2',
     component: ()=>import('../views/translate/index2.vue')
   },
+  {
+    path: '/canvas',
+    component: ()=>import('../views/canvas/index.vue')
+  },
+  {
+    path: '/canvas1',
+    component: ()=>import('../views/canvas/index1.vue')
+  },
+  {
+    path: '/canvas2',
+    component: ()=>import('../views/canvas/index2.vue')
+  },
+  {
+    path: '/canvas3',
+    component: ()=>import('../views/canvas/index3.vue')
+  },
+  {
+    path: '/canvas4',
+    component: ()=>import('../views/canvas/index4.vue')
+  },
+  {
+    path: '/canvas5',
+    component: ()=>import('../views/canvas/index5.vue')
+  },
+  {
+    path: '/canvas6',
+    component: ()=>import('../views/canvas/index6.vue')
+  },
+  {
+    path: '/canvas7',
+    component: ()=>import('../views/canvas/index7.vue')
+  },
+  {
+    path: '/canvas8',
+    component: ()=>import('../views/canvas/index8.vue')
+  },
+  {
+    path: '/canvas9',
+    component: ()=>import('../views/canvas/index9.vue')
+  },
 ]
 // 创建路由管理器 模式和路由
 const router=createRouter({
