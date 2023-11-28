@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      '/image': resolve(__dirname, './src/assets/image')
+      '/image': resolve(__dirname, './src/assets/image'),
     }
   },
   // 开发服务器配置

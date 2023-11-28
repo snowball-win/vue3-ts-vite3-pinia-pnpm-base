@@ -53,6 +53,34 @@ const routes=[
     component: ()=>import('../views/three/index.vue')
   },
   {
+    path: '/three2', // three.js
+    component: ()=>import('../views/three/index2.vue')
+  },
+  {
+    path: '/three3', // three.js
+    component: ()=>import('../views/three/index3.vue')
+  },
+  {
+    path: '/three4', // three.js
+    component: ()=>import('../views/three/index4.vue')
+  },
+  {
+    path: '/three5', // three.js
+    component: ()=>import('../views/three/index5.vue')
+  },
+  {
+    path: '/three6', // three.js
+    component: ()=>import('../views/three/index6.vue')
+  },
+  {
+    path: '/three7', // three.js
+    component: ()=>import('../views/three/index7.vue')
+  },
+  {
+    path: '/three8', // three.js
+    component: ()=>import('../views/three/index8.vue')
+  },
+  {
     path: '/data-path', // data-path
     component: ()=>import('../views/dataPath/index.vue')
   },
@@ -210,6 +238,10 @@ const routes=[
   {
     path: '/canvas9',
     component: ()=>import('../views/canvas/index9.vue')
+  },
+  {
+    path: '/video',
+    component: ()=>import('../views/video/index.vue')
   },
 ]
 // 创建路由管理器 模式和路由
