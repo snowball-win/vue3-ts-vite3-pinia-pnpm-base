@@ -2,10 +2,16 @@ import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import VueSetupExtend from 'vite-plugin-vue-setup-extend'
+// import includeView1 from './plugins/include-view1';
+import myRollupPlugin from './plugins/my-plugins';
 console.log('基础服务路径', loadEnv(process.argv[process.argv.length-1], './env').VITE_SERVER_NAME) // 打印到了VITE_SERVER_NAME
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),VueSetupExtend()],
+  plugins: [
+    vue(),
+    VueSetupExtend(),
+    myRollupPlugin()
+  ],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
@@ -35,6 +41,19 @@ export default defineConfig({
         drop_console: true,
         drop_debugger: true
       }
-    }
+    },
+    rollupOptions: {
+      // input: {
+      //   index: resolve(__dirname, 'src/main.ts'),
+      // },
+      plugins: [
+        // includeView1(), // 使用自定义的插件来处理views/view1目录下的文件
+      ],
+      // include: ['views/canvas/**/*.vue']
+      // 指定要包含的目录和文件
+      // include: [
+      //   resolve(__dirname, 'views/canvas/**/*.vue'), // 指定要构建的目录和文件类型
+      // ]
+    },
   }
 })

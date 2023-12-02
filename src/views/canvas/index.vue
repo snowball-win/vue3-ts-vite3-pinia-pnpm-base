@@ -1,6 +1,7 @@
 <template>
   <div class="contmian">
     <canvas id="myCanvas" width="400" height="400"></canvas>
+    <my-tag>哈哈哈</my-tag>
   </div>
 </template>
 <script setup lang="ts">
